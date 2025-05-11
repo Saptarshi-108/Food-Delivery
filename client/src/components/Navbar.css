@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #ff4400;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Carl-Sans";
+}
+
+.navbar-container {
+  max-width: 1200px; /* Constrain content width */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-image {
+  height: 10vw;
+  width: 10vw;
+  cursor: pointer;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-link {
+  color: #e3e3e3;
+  text-decoration: none;
+  transition: color 0.1s;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.navbar-link:hover {
+  color: #ffffff;
+  transition-duration: 0.3s;
+}

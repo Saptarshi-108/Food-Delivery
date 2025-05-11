@@ -1,0 +1,69 @@
+/* Load Cal Sans font */
+@font-face {
+  font-family: "Cal Sans";
+  src: url("../assets/fonts/CalSans-Regular.woff2") format("woff2"),
+    url("../assets/fonts/CalSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.details-container {
+  font-family: "Cal Sans", sans-serif; /* Corrected from Carl-Sans */
+  color: white;
+  background-color: #ff4400;
+  width: 100%;
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+}
+
+.details-container h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.location-input {
+  margin: 1rem 0;
+}
+
+.location-input input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+  max-width: 100%;
+  font-family: "Cal Sans", sans-serif;
+}
+
+.location-input input::placeholder {
+  color: #999;
+}
+
+.source-details {
+  margin: 1rem 0;
+}
+
+.source-details label {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  padding: 0.25rem;
+}
+
+.source-details label input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  max-width: 100%;
+  font-family: "Cal Sans", sans-serif;
+}
+
+.source-details input::placeholder {
+  color: #999;
+}
