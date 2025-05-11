@@ -1,6 +1,5 @@
 import React from "react";
 import "./Details.css";
-import mapointer from "../../public/location-sign-svgrepo-com.svg"; // Kept for CSS background-image
 
 const Details = () => {
   return (
@@ -17,10 +16,12 @@ const Details = () => {
       </div>
       <div className="source-details">
         <label>
-          <input
-            type="text"
-            placeholder="Search name of the Restaurants and items"
-          />
+          <a href="">
+            <input
+              type="text"
+              placeholder="Search name of the Restaurants and items"
+            />
+          </a>
         </label>
       </div>
     </div>

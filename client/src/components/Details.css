@@ -12,7 +12,6 @@
   font-family: "Cal Sans", sans-serif; /* Corrected from Carl-Sans */
   color: white;
   background-color: #ff4400;
-  width: 100%;
   margin: 0;
   padding: 2rem;
   text-align: center;
@@ -22,7 +21,6 @@
   font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
-  line-height: 1.2;
 }
 
 .location-input {
@@ -30,13 +28,16 @@
 }
 
 .location-input input {
-  padding: 0.75rem;
+  padding: 0.75rem 0.75rem 0.75rem 2.5rem; /* Adjusted for icon */
   font-size: 1rem;
   border: none;
   border-radius: 5px;
-  width: 300px;
   max-width: 100%;
   font-family: "Cal Sans", sans-serif;
+  background-image: url("/location-sign-svgrepo-com.svg"); /* Added for icon */
+  background-repeat: no-repeat;
+  background-position: 0.5rem center;
+  background-size: 24px 24px;
 }
 
 .location-input input::placeholder {
@@ -50,9 +51,8 @@
 .source-details label {
   display: flex;
   align-items: center;
-  background-color: white;
-  border-radius: 5px;
-  padding: 0.25rem;
+  max-width: 100%;
+  margin: auto;
 }
 
 .source-details label input {
@@ -60,7 +60,8 @@
   font-size: 1rem;
   border: none;
   border-radius: 5px;
-  max-width: 100%;
+  width: 60%;
+  margin: auto;
   font-family: "Cal Sans", sans-serif;
 }
 
