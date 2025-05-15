@@ -9,7 +9,7 @@
 }
 
 .details-container {
-  font-family: "Cal Sans", sans-serif; /* Corrected from Carl-Sans */
+  font-family: "Cal Sans", sans-serif;
   color: white;
   background-color: #ff4400;
   margin: 0;
@@ -21,6 +21,7 @@
   font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
+  line-height: 1.2;
 }
 
 .location-input {
@@ -28,16 +29,18 @@
 }
 
 .location-input input {
-  padding: 0.75rem 0.75rem 0.75rem 2.5rem; /* Adjusted for icon */
+  padding: 0.75rem 0.75rem 0.75rem 2.5rem;
   font-size: 1rem;
   border: none;
   border-radius: 5px;
+  width: 300px;
   max-width: 100%;
   font-family: "Cal Sans", sans-serif;
-  background-image: url("/location-sign-svgrepo-com.svg"); /* Added for icon */
+  background-image: url("/location-sign-svgrepo-com.svg");
   background-repeat: no-repeat;
   background-position: 0.5rem center;
   background-size: 24px 24px;
+  box-sizing: border-box;
 }
 
 .location-input input::placeholder {
@@ -46,13 +49,23 @@
 
 .source-details {
   margin: 1rem 0;
+  display: flex;
+  justify-content: center;
 }
 
 .source-details label {
   display: flex;
   align-items: center;
-  max-width: 100%;
-  margin: auto;
+  width: fit-content; /* Wraps tightly around input */
+}
+
+.source-details-link {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+  margin-left: 50%;
+  margin-right: 50%;
 }
 
 .source-details label input {
@@ -60,9 +73,9 @@
   font-size: 1rem;
   border: none;
   border-radius: 5px;
-  width: 60%;
-  margin: auto;
   font-family: "Cal Sans", sans-serif;
+  box-sizing: border-box;
+  width: 50vw; /* Restored width */
 }
 
 .source-details input::placeholder {

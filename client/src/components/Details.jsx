@@ -15,14 +15,14 @@ const Details = () => {
         </label>
       </div>
       <div className="source-details">
-        <label>
-          <a href="">
+        <a href="/search" className="source-details-link">
+          <label>
             <input
               type="text"
               placeholder="Search name of the Restaurants and items"
             />
-          </a>
-        </label>
+          </label>
+        </a>
       </div>
     </div>
   );

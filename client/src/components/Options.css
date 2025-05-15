@@ -1,0 +1,122 @@
+.options-layout {
+  font-family: "Cal Sans", sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.food-dishes {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.grid-set {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.grid-set.hidden {
+  display: none;
+}
+
+.food-category {
+  background-color: rgb(233, 233, 233);
+  color: rgb(0, 0, 0);
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 150px;
+  min-width: 150px;
+}
+
+.food-category img {
+  height: 9vw;
+  width: 10vw;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.food-category-title {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.food-category-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.scroll-button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.scroll-button.left {
+  left: 1rem;
+}
+
+.scroll-button.right {
+  right: 1rem;
+}
+
+@media (max-width: 768px) {
+  .grid-set {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .food-category {
+    min-width: 120px;
+  }
+
+  .food-category img {
+    height: 20vw;
+    width: 22vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-set {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+  }
+
+  .food-category img {
+    height: 30vw;
+    width: 35vw;
+  }
+
+  .scroll-button {
+    display: none;
+  }
+}

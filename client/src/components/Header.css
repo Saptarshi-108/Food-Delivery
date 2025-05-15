@@ -3,7 +3,7 @@ body {
   padding: 0;
 }
 
-.navbar {
+.header {
   background-color: #ff4400;
   width: 100%;
   margin: 0;
@@ -11,7 +11,7 @@ body {
   font-family: "Carl-Sans";
 }
 
-.navbar-container {
+.header-container {
   max-width: 1200px; /* Constrain content width */
   margin: 0 auto;
   display: flex;
@@ -25,12 +25,12 @@ body {
   cursor: pointer;
 }
 
-.navbar-links {
+.header-links {
   display: flex;
   gap: 2rem;
 }
 
-.navbar-link {
+.header-link {
   color: #e3e3e3;
   text-decoration: none;
   transition: color 0.1s;
@@ -38,7 +38,7 @@ body {
   cursor: pointer;
 }
 
-.navbar-link:hover {
+.header-link:hover {
   color: #ffffff;
   transition-duration: 0.3s;
 }
