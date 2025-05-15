@@ -26,7 +26,7 @@ const Footer = () => {
           <h3>Contact Us</h3>
           <ul>
             <li>
-              <a href="mailto:support@foodapp.com">support@foodilies.com</a>
+              <a href="mailto:support@foodilies.com">support@foodilies.com</a>
             </li>
             <li>
               <a href="tel:+911234567890">+91 123-456-7890</a>
@@ -120,6 +120,11 @@ const Footer = () => {
                 src="/assets/play-store-badge.png"
                 alt="Get it on Google Play"
                 className="app-badge"
+                onError={(e) => {
+                  console.error("Failed to load Play Store badge");
+                  e.target.src =
+                    "https://via.placeholder.com/120?text=Play+Store";
+                }}
               />
             </a>
             <a
@@ -131,6 +136,11 @@ const Footer = () => {
                 src="/assets/app-store-badge.png"
                 alt="Download on the App Store"
                 className="app-badge"
+                onError={(e) => {
+                  console.error("Failed to load App Store badge");
+                  e.target.src =
+                    "https://via.placeholder.com/120?text=App+Store";
+                }}
               />
             </a>
           </div>
@@ -139,10 +149,14 @@ const Footer = () => {
       <div className="footer-bottom">
         <img
           src="/title-logo-removebg-preview.png"
-          alt="FoodApp Logo"
+          alt="Foodilies Logo"
           className="footer-logo"
+          onError={(e) => {
+            console.error("Failed to load logo");
+            e.target.src = "https://via.placeholder.com/100?text=Logo";
+          }}
         />
-        <p>&copy; 2025 Foodilies. All rights reserved.</p>
+        <p>© 2025 Foodilies. All rights reserved.</p>
       </div>
     </footer>
   );

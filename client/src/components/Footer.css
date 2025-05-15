@@ -3,6 +3,7 @@
   color: #d3d3d3;
   font-family: "Cal Sans", sans-serif;
   padding: 3rem 2rem;
+  min-height: 200px; /* Ensure footer is visible */
 }
 
 .footer-container {

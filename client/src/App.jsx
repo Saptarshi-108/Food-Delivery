@@ -11,7 +11,7 @@ function App() {
       <Details />
       <Carousel />
       <Options />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
