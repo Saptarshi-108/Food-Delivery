@@ -109,53 +109,9 @@ const Footer = () => {
               </svg>
             </a>
           </div>
-          <h3>Get Our App</h3>
-          <div className="app-links">
-            <a
-              href="https://play.google.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="/assets/play-store-badge.png"
-                alt="Get it on Google Play"
-                className="app-badge"
-                onError={(e) => {
-                  console.error("Failed to load Play Store badge");
-                  e.target.src =
-                    "https://via.placeholder.com/120?text=Play+Store";
-                }}
-              />
-            </a>
-            <a
-              href="https://www.apple.com/app-store"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="/assets/app-store-badge.png"
-                alt="Download on the App Store"
-                className="app-badge"
-                onError={(e) => {
-                  console.error("Failed to load App Store badge");
-                  e.target.src =
-                    "https://via.placeholder.com/120?text=App+Store";
-                }}
-              />
-            </a>
-          </div>
         </div>
       </div>
       <div className="footer-bottom">
-        <img
-          src="/title-logo-removebg-preview.png"
-          alt="Foodilies Logo"
-          className="footer-logo"
-          onError={(e) => {
-            console.error("Failed to load logo");
-            e.target.src = "https://via.placeholder.com/100?text=Logo";
-          }}
-        />
         <p>© 2025 Foodilies. All rights reserved.</p>
       </div>
     </footer>
