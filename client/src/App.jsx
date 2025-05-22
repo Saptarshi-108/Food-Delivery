@@ -4,7 +4,9 @@ import Details from "./components/Details";
 import Carousel from "./components/Carousel";
 import Options from "./components/Options";
 import Footer from "./components/Footer";
-import RecommendList from "./components/Recommend";
+import RecommendList from "./components/recommend";
+import Login from "./components/Login";
+import "./App.css";
 import "./App.css";
 
 // Error Boundary Component
@@ -36,7 +38,10 @@ function App() {
   return (
     <ErrorBoundary>
       <div className="app-container">
-        <Header />
+        <div className="header-container">
+          <Header />
+          <Login />
+        </div>
         <Details />
         <Carousel />
         <RecommendList />

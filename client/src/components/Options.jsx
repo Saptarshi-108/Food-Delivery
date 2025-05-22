@@ -89,7 +89,7 @@ const Options = () => {
             <a href="/category/momo" className="food-category-link">
               <div className="food-category Momo">
                 <img
-                  src="https://i.guim.co.uk/img/media/775e8cb61ce6adc0c20352a1f4d57cee6312f259/133_43_631_379/master/631.jpg?width=1200&quality=85&auto=format&fit=max&s=740229b11857a59a5924820a10ae40b8"
+                  src="https://media.istockphoto.com/id/1133151212/photo/japanese-dumplings-gyoza-with-pork-meat-and-vegetables.jpg?s=612x612&w=0&k=20&c=vC6GTUDGK6dD5_QHvY1V7fVUdPx-z4TG73DUACR_L5s="
                   alt="Momo"
                 />
                 <div className="food-category-title">Momo</div>

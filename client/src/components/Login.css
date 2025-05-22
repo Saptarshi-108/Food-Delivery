@@ -1,0 +1,79 @@
+.login-container {
+  font-family: "Cal Sans", sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
+}
+
+.signin-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.signin-button:hover {
+  background-color: #ff4400;
+  border-color: #ff4400;
+  color: #fff;
+}
+
+.google-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.user-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.user-name {
+  font-size: 0.9rem;
+  color: #1c2526;
+}
+
+.signout-button {
+  background-color: #ff4400;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.signout-button:hover {
+  background-color: #e03c00;
+}
+
+.login-error {
+  color: #ff4400;
+  font-size: 0.85rem;
+  margin-right: 1rem;
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    justify-content: center;
+  }
+
+  .user-name {
+    display: none;
+  }
+}

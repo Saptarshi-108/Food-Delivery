@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Recommend.css";
+import "./recommend.css";
 
 const Recommend = ({ name, cuisine, rating, image, address }) => {
   return (
