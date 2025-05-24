@@ -64,7 +64,7 @@ const Login = () => {
               e.target.src = "https://via.placeholder.com/20?text=G";
             }}
           />
-          Sign in with Google
+          Sign in
         </button>
       )}
     </div>

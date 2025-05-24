@@ -4,23 +4,30 @@
   justify-content: flex-end;
   align-items: center;
   padding: 1rem;
+  height: 7.9vw;
+  background-color: #ff4400;
 }
 
 .signin-button {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background-color: #fff;
+  color: aliceblue;
+  background-color: #1b2526;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem;
   font-size: 0.9rem;
   cursor: pointer;
+  border-radius: 3vw;
   transition: background-color 0.3s, border-color 0.3s;
+  margin-right: 10vw;
+  width: 8vw;
+  height: 3vw;
+  font-size: large;
 }
 
 .signin-button:hover {
-  background-color: #ff4400;
+  background-color: #1b2526dc;
   border-color: #ff4400;
   color: #fff;
 }
@@ -48,7 +55,8 @@
 }
 
 .signout-button {
-  background-color: #ff4400;
+  margin-right: 10vw;
+  background-color: #1b2526;
   border: none;
   border-radius: 5px;
   padding: 0.5rem 1rem;
@@ -56,10 +64,14 @@
   font-size: 0.9rem;
   cursor: pointer;
   transition: background-color 0.3s;
+  width: 8vw;
+  height: 3vw;
+  margin-left: 2vw;
+  border-radius: 3vw;
 }
 
 .signout-button:hover {
-  background-color: #e03c00;
+  background-color: #1b2526dc;
 }
 
 .login-error {

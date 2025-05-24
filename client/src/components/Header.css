@@ -5,6 +5,7 @@ body {
 
 .header {
   background-color: #ff4400;
+  display: block;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -12,7 +13,7 @@ body {
 }
 
 .header-container {
-  max-width: 1200px; /* Constrain content width */
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -21,6 +22,7 @@ body {
 
 .logo-image {
   height: 10vw;
+  margin-left: 5vw;
   width: 10vw;
   cursor: pointer;
 }
@@ -28,6 +30,7 @@ body {
 .header-links {
   display: flex;
   gap: 2rem;
+  margin-right: 5vw;
 }
 
 .header-link {
