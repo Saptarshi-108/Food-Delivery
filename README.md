@@ -20,7 +20,6 @@ A full-stack food delivery application under active development. The platform is
 
 ### Frontend
 - React.js
-- Tailwind CSS
 - Axios
 - React Router
 
