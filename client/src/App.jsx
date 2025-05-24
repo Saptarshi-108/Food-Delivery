@@ -7,7 +7,6 @@ import Footer from "./components/Footer";
 import RecommendList from "./components/recommend";
 import Login from "./components/Login";
 import "./App.css";
-import "./App.css";
 
 // Error Boundary Component
 class ErrorBoundary extends Component {
