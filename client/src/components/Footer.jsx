@@ -17,9 +17,6 @@ const Footer = () => {
             <li>
               <a href="/team">Team</a>
             </li>
-            <li>
-              <a href="/blog">Blog</a>
-            </li>
           </ul>
         </div>
         <div className="footer-column">
@@ -31,7 +28,7 @@ const Footer = () => {
             <li>
               <a href="tel:+911234567890">+91 123-456-7890</a>
             </li>
-            <li>123 Food Street, Kolkata, India</li>
+            <li>108 Food Street , Kolkata, India</li>
           </ul>
         </div>
         <div className="footer-column">
