@@ -1,5 +1,6 @@
 import React from "react";
 import "./Details.css";
+import Address from "./Address";
 
 const Details = () => {
   return (
@@ -11,7 +12,9 @@ const Details = () => {
       </h1>
       <div className="location-input">
         <label>
-          <input type="text" placeholder="Enter the delivery location" />
+          <Address />
+          {/* <input type="text" placeholder="Enter the delivery location" /> */}
+          <i class="fas fa-map-marker-alt" />
         </label>
       </div>
       <div className="source-details">

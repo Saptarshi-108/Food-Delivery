@@ -1,0 +1,88 @@
+.address-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.address-input {
+  width: 100%;
+  padding: 12px 40px 12px 16px;
+  font-size: 16px;
+  font-family: "Cal Sans", sans-serif;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.address-input:focus {
+  border-color: #ff4400;
+}
+
+.address-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #e0e0e0;
+  color: black;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  margin: 4px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dropdown-item {
+  padding: 12px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background: #fff3ef;
+  color: #ff4400;
+}
+
+.current-location {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: #ff4400;
+}
+
+.location-icon {
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .address-input {
+    font-size: 14px;
+    padding: 10px 36px 10px 14px;
+  }
+
+  .dropdown-item {
+    font-size: 13px;
+    padding: 10px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .address-wrapper {
+    max-width: 100%;
+  }
+
+  .address-input {
+    font-size: 13px;
+    padding: 8px 32px 8px 12px;
+  }
+
+  .address-dropdown {
+    max-height: 150px;
+  }
+}

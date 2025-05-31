@@ -44,7 +44,7 @@ function App() {
         <Details />
         <Carousel />
         <Options />
-        <RecommendList />
+        {/* <RecommendList /> */}
         <Footer />
       </div>
     </ErrorBoundary>

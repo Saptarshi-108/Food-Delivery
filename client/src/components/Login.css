@@ -6,22 +6,23 @@
   padding: 1rem;
   height: 10vw;
   background-color: #ff4400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .signin-button {
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
   color: aliceblue;
   background-color: #1b2526;
   padding: 0.5rem 0.5rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   cursor: pointer;
   border-radius: 3vw;
   transition: background-color 0.3s, border-color 0.3s;
   margin-right: 10vw;
-  width: 8vw;
-  height: 3vw;
+  min-width: 8vw;
+  min-height: 3vw;
   font-size: large;
 }
 
